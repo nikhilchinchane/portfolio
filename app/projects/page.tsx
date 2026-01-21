@@ -1,4 +1,5 @@
-import Image from "next/image";
+
+import Link from "next/link";
 
 export default function Projects() {
   return (
@@ -8,9 +9,16 @@ export default function Projects() {
           <h1 className="max-w-sm text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Projects
           </h1>
-          <p className="max-w-sm text-base font-medium text-black dark:text-zinc-50">
-            Here are some of my recent projects.
-          </p>
+          <section style={{ marginTop: "24px" }}>
+        <h2>Scalable Search Platform</h2>
+        <p>
+          Enterprise-style search system focusing on performance, pagination,
+          and scalable UI architecture.
+        </p>
+        <Link href="/projects/scalable-search">
+          View Case Study →
+        </Link>
+      </section>
         </div>
        
       </main>
